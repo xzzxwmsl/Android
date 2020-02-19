@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+>
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:id="@+id/lovelist_item_image"
+    />
+
+    <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/lovelist_item_name"
+            android:text="豪华至尊版 256G+512G 新一代苹果20 "
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/lovelist_item_image"
+    />
+
+
+
+</RelativeLayout>
+

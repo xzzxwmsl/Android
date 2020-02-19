@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#c9c9c9"
+            android:orientation="horizontal"
+
+
+    >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/leftwhite"
+                android:layout_weight="1"
+
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/addnew_return"
+
+        />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="添加收货地址"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+        />
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保存"
+                android:textSize="20sp"
+                android:textColor="@color/style_red"
+
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/addnew_save"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+    >
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="收货人"
+                android:id="@+id/addnew_name"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="电话号码"
+                android:id="@+id/addnew_phone"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="地址"
+                android:id="@+id/addnew_add"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

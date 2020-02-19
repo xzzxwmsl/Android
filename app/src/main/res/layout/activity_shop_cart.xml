@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+>
+
+
+
+    <RelativeLayout
+            android:id="@+id/topRea"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#4A90E2">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="购物车"
+                android:textSize="20sp"
+        />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/bottemLin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+        <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <CheckBox
+                    android:id="@+id/allcheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="全选"
+                    android:textColor="#000000" />
+
+            <TextView
+                    android:id="@+id/heji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/allcheck"
+                    android:text="合计"
+                    android:textColor="#000000" />
+
+            <TextView
+                    android:id="@+id/hejivalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/heji"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="0.0"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/jiesuanRea"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="#4A90E2">
+
+
+            <TextView
+                    android:id="@+id/jiesuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="结算"
+                    android:textColor="#ffffff" />
+
+            <TextView
+                    android:id="@+id/zuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/jiesuan"
+                    android:text="("
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/jiesuanvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/zuo"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/you"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/jiesuanvalue"
+                    android:text=")"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottemLin"
+            android:layout_below="@+id/topRea"
+            android:orientation="vertical">
+
+        <ListView
+                android:id="@+id/MyList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9c9c9c" />
+</RelativeLayout>
